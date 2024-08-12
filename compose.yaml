@@ -8,6 +8,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+
+    volumes:
+      - .:/app
     
     # do port mapping so that we can access the app from the browser
     ports:
